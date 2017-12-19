@@ -1,5 +1,5 @@
 const clientID =  'd35670ba65c84bfa89c7cbca215130b8';
-const redirectURI = 'http://curate-your-list.surge.sh/';
+const redirectURI = 'http://groovy-knot.surge.sh/';
 
 
 
