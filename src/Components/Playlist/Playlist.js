@@ -13,7 +13,7 @@ class Playlist extends Component{
   render(){
     return(
       <div className="Playlist">
-        <input onChange={this.handleOnChange} defaultValue={this.props.playlistName} />
+        <input onChange={this.handleNameChange} defaultValue={this.props.playlistName} />
         <TrackList playlistTracks={this.props.playlistTracks} onRemove={this.props.onRemove} isRemoval={true}  />
         <a className="Playlist-save" onClick={this.props.onSave}>SAVE TO SPOTIFY </a>
       </div>
