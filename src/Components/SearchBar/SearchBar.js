@@ -14,13 +14,16 @@ class SearchBar extends Component{
   search(){
     this.props.onSearch(this.state.term)
   }
-  render(){
-    return (
-      <div className="SearchBar">
-        <input onChange={this.handleTermChange} placeholder="Enter A Song, Album, or Artist" />
-        <a onClick={this.search}>SEARCH</a>
-    </div>
-    );
-  }
+
+    render(){
+      return (
+        <div className="SearchBar">
+        <form onSubmit={this.search}>
+          <input onChange={this.handleTermChange} placeholder="Enter A Song, Album, or Artist" />
+          <button type="submit">SEARCH</button>
+        </form>
+      </div>
+      );
+    }
 }
 export default SearchBar;
